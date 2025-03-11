@@ -111,6 +111,9 @@ main > section{
     margin-bottom: 32px;
 }
 /* Features section style */
+.features{
+    gap: 148px;
+}
 #feature-section-title{
     border-left: 5px solid #FF900E;
     padding-left: 21px;
@@ -118,9 +121,26 @@ main > section{
 .feature-card .feature-title{
     font-weight: 600;
     font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .feature-card{
     padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+#experience-badge{
+    padding: 45px 42px;
+    cursor: help;
+    font-size: 1.5rem;
+    font-size: 500;
+    margin-left: -92px;
+    margin-top: -130px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 4rem;
 }
 /* Some fact releted style */
 .facts-conteiner{
@@ -168,9 +188,13 @@ main > section{
     border-radius: 8px;
 }
 .foot-description{
+    padding: 38px;
     margin-top: 130px;
     display: flex;
     justify-content: center;
+}
+.feature-architect img{
+    width: 100%;
 }
 /* Responsive media query */
 @media screen and (max-width: 576px) {
@@ -192,10 +216,21 @@ main > section{
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
     }
+    .features{
+        flex-direction: column-reverse;
+    }
     .our-Features{
         width: auto;
         text-align: center;
         margin: 0px;
+    }
+    #experience-badge{
+        padding: 30px 28px;
+        cursor: help;
+        font-size: 1rem;
+        font-size: 500;
+        margin: 0 auto;
+        margin-top: -70px;
     }
     .facts-conteiner{
         grid-template-columns: repeat(1, 1fr);
@@ -221,6 +256,17 @@ main > section{
 @media screen and (min-width: 576px) and (max-width: 992px) {
     .teams{
         flex-direction: column;
+    }
+    .features{
+        flex-direction: column-reverse;
+    }
+    #experience-badge{
+        padding: 30px 28px;
+        cursor: help;
+        font-size: 1rem;
+        font-size: 500;
+        margin: 0 auto;
+        margin-top: -70px;
     }
     .facts-conteiner{
         grid-template-columns: repeat(2, 1fr);
